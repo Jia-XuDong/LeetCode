@@ -25,7 +25,7 @@ class Solution
     }
 
 public:
-    vector<string> fullJustify(vector<string> &words, int maxWidth)
+    vector<string> fullJustify(vector<string> &words, long unsigned int maxWidth)
     {
         vector<string> ans;
         int right = 0, n = words.size();
@@ -68,7 +68,7 @@ int main()
 {
     Solution solution;
     vector<string> words = {"This", "is", "an", "example", "of", "text", "justification."};
-    int maxWidth = 16;
+    long unsigned int maxWidth = 16;
     vector<string> ans = solution.fullJustify(words, maxWidth);
     for (auto i : ans)
     {

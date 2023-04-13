@@ -11,17 +11,17 @@ using std::vector;
 class Solution
 {
 public:
-    int findMaximizedCapital(int k, int w, vector<int> &profits, vector<int> &capital)
+    int findMaximizedCapital(long unsigned int k, int w, vector<int> &profits, vector<int> &capital)
     {
         vector<pair<int, int>> vec;
-        for (int i = 0; i < capital.size(); ++i)
+        for (long unsigned int i = 0; i < capital.size(); ++i)
         {
             vec.push_back({capital[i], profits[i]});
         }
         sort(vec.begin(), vec.end());
         priority_queue<int, vector<int>, std::less<int>> prique;
-        int curr = 0;
-        for (int i = 0; i < k && i < profits.size(); ++i)
+        long unsigned int curr = 0;
+        for (long unsigned int i = 0; i < k && i < profits.size(); ++i)
         {
             while (vec[curr].first <= w && curr < profits.size())
             {

@@ -26,7 +26,7 @@ public:
         for (auto i : dictionary)
         {
             string str = i;
-            int n = 0, m = 0;
+            long unsigned int n = 0, m = 0;
             if (s.length() >= str.length())
             {
                 for (; m < s.length() && n < str.length(); ++m)

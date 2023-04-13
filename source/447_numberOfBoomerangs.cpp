@@ -29,7 +29,7 @@ int main()
 {
     std::vector<std::vector<int>> points;
     std::vector<int> v;
-    int m, n = 2, temp;
+    int m = 2, temp;
     std::cin >> m; //平面上点的个数
 
     for (int i = 0; i < m; i++)
